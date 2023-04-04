@@ -1,13 +1,30 @@
-# HelloPlugin
+# ContentGenerator Switcher for QChatGPT
 
-[QChatGPT](https://github.com/RockChinQ/QChatGPT) 项目的示例插件和模板  
-使用方法见[QChatGPT项目wiki](https://github.com/RockChinQ/QChatGPT/wiki/%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8)
+[QChatGPT](https://github.com/RockChinQ/QChatGPT)项目的内容生成器（模型）切换插件  
+使用此插件以方便地在`GPT-3`、`GPT-3.5`、`New Bing`等语言模型间切换
 
-## 依赖处理
+## 已适配
 
-请将此插件依赖的Python库添加到requirements.txt文件内，以便主程序自动安装/升级此插件时解决依赖
+### 文字对话
 
-## 发布
+#### 主线Completion接口
 
-推荐以储存库地址的形式发布插件，便于用户[自动安装](https://github.com/RockChinQ/QChatGPT/wiki/%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8#%E5%82%A8%E5%AD%98%E5%BA%93%E5%85%8B%E9%9A%86%E6%8E%A8%E8%8D%90)  
-欢迎以PR或issue的形式投稿您的插件到[主程序文档](https://github.com/RockChinQ/QChatGPT#%E6%8F%92%E4%BB%B6%E7%94%9F%E6%80%81)
+- [x] GPT-3 (`text-davinci-003`)
+
+#### 主线ChatCompletion接口
+
+- [x] GPT-3.5 (`gpt-3.5-turbo`)
+- [x] GPT-4 (`gpt-4`)
+
+#### [RevLibs插件](https://github.com/RockChinQ/revLibs)接入
+
+- [x] ChatGPT逆向 (网页版3.5)
+- [x] ChatGPT逆向 (网页版4)
+- [x] New Bing逆向
+
+## 安装
+
+使用管理员账号私聊机器人账号发送命令
+```
+!plugin https://github.com/RockChinQ/Switcher
+```
