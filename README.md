@@ -19,7 +19,7 @@
 #### [RevLibs插件](https://github.com/RockChinQ/revLibs)接入
 
 - [x] ChatGPT逆向 (网页版3.5)
-- [x] ChatGPT逆向 (网页版4)
+- [ ] ChatGPT逆向 (网页版4)
 - [x] New Bing逆向
 
 ## 安装
@@ -28,3 +28,11 @@
 ```
 !plugin https://github.com/RockChinQ/Switcher
 ```
+
+## 使用
+
+管理员发送指令
+```
+!switch
+```
+查看当前支持的模型，并根据指引切换

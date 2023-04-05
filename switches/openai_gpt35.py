@@ -1,19 +1,19 @@
 from .model import AbstractSwitch
 
 
-class OpenAIGPT30(AbstractSwitch):
-    """OpenAI GPT3.0"""
+class OpenAIGPT35(AbstractSwitch):
+    """OpenAI GPT3.5"""
 
     def __init__(self):
         pass
 
     @staticmethod
     def get_name() -> str:
-        pass
+        return "OpenAI GPT-3.5官方API"
 
     @staticmethod
     def get_alias() -> str:
-        pass
+        return "gpt3.5"
 
     @staticmethod
     def supported() -> bool:
@@ -22,8 +22,5 @@ class OpenAIGPT30(AbstractSwitch):
     @staticmethod
     def enable():
         import config
-        config.completion_api_params['model'] = 'text-davinci-003'
+        config.completion_api_params['model'] = 'gpt-3.5-turbo'
 
-    @staticmethod
-    def disable():
-        pass
