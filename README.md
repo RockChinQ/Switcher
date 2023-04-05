@@ -1,5 +1,7 @@
 # ContentGenerator Switcher for QChatGPT
 
+### 使用此插件，要求QChatGPT版本等于或高于`v2.3.4`
+
 [QChatGPT](https://github.com/RockChinQ/QChatGPT)项目的内容生成器（模型）切换插件  
 使用此插件以方便地在`GPT-3`、`GPT-3.5`、`New Bing`等语言模型间切换
 
