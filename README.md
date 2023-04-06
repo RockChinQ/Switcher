@@ -28,7 +28,7 @@
 
 使用管理员账号私聊机器人账号发送命令
 ```
-!plugin https://github.com/RockChinQ/Switcher
+!plugin get https://github.com/RockChinQ/Switcher
 ```
 
 ## 使用
