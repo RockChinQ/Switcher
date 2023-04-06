@@ -23,4 +23,5 @@ class OpenAIGPT35(AbstractSwitch):
     def enable():
         import config
         config.completion_api_params['model'] = 'gpt-3.5-turbo'
+        del config.completion_api_params['max_tokens']
 

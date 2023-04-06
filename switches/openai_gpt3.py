@@ -23,3 +23,4 @@ class OpenAIGPT3(AbstractSwitch):
     def enable():
         import config
         config.completion_api_params['model'] = 'text-davinci-003'
+        config.completion_api_params['max_tokens'] = 256
