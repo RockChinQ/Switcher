@@ -32,9 +32,9 @@ class SwitcherPlugin(Plugin):
         from .switches.model import __switches__
 
         if cmd == 'switch':
+            event.prevent_default()
+            event.prevent_postorder()
             if kwargs['is_admin']:
-                event.prevent_default()
-                event.prevent_postorder()
                 if len(params) == 0:
                     # 输出所有可用模型
                     reply_str = "[Switcher] 已支持切换的模型：\n\n"
