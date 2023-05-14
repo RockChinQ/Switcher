@@ -53,3 +53,6 @@ def register_all():
     from .newbing import NewBing
     register(NewBing)
 
+    from .hugchat import HugChat
+    register(HugChat)
+
