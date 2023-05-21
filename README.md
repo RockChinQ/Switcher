@@ -23,6 +23,7 @@
 - [x] ChatGPT逆向 (网页版3.5)
 - [ ] ChatGPT逆向 (网页版4)
 - [x] New Bing逆向
+- [x] HuggingChat逆向
 
 ## 安装
 
