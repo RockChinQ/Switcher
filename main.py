@@ -14,7 +14,7 @@ def reset_to_default():
 
 
 # 注册插件
-@register(name="Switcher", description="快捷切换使用的模型", version="0.1", author="RockChinQ")
+@register(name="Switcher", description="快捷切换使用的模型", version="0.1.1", author="RockChinQ")
 class SwitcherPlugin(Plugin):
 
     # 插件加载时触发
