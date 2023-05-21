@@ -37,3 +37,4 @@ class HugChat(AbstractSwitch):
         from plugins.revLibs.pkg.process.impls.hugchat import HugChatImpl
         import plugins.revLibs.pkg.process.revss
         plugins.revLibs.pkg.process.revss.__rev_interface_impl_class__ = HugChatImpl
+        plugins.revLibs.pkg.process.revss.__sessions__ = {}

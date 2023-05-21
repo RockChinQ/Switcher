@@ -31,3 +31,4 @@ class RevChatGPT35(AbstractSwitch):
         from plugins.revLibs.pkg.process.impls.v1impl import RevChatGPTV1
         import plugins.revLibs.pkg.process.revss
         plugins.revLibs.pkg.process.revss.__rev_interface_impl_class__ = RevChatGPTV1
+        plugins.revLibs.pkg.process.revss.__sessions__ = {}

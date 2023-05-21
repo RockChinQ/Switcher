@@ -30,3 +30,4 @@ class NewBing(AbstractSwitch):
         from plugins.revLibs.pkg.process.impls.edgegpt import EdgeGPTImpl
         import plugins.revLibs.pkg.process.revss
         plugins.revLibs.pkg.process.revss.__rev_interface_impl_class__ = EdgeGPTImpl
+        plugins.revLibs.pkg.process.revss.__sessions__ = {}
