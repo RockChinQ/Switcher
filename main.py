@@ -37,7 +37,10 @@ class SwitcherPlugin(Plugin):
             if kwargs['is_admin']:
                 if len(params) == 0:
                     # 输出所有可用模型
-                    reply_str = "[Switcher] 已支持切换的模型：\n\n"
+                    reply_str = "[Switcher]\n" \
+                                "注意：要使用星火大模型等OneAPI渠道模型，需要使用oneapi的代理地址和key，并先添加渠道。\n" \
+                                "oneapi项目地址：https://github.com/songquanpeng/one-api\n" \
+                                "已支持切换的模型：\n\n"
                     for key in __switches__:
                         switch = __switches__[key]
                         if switch.supported():
