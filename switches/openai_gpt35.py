@@ -26,3 +26,30 @@ class OpenAIGPT35(AbstractSwitch):
         if 'max_tokens' in config.completion_api_params:
             del config.completion_api_params['max_tokens']
 
+
+class OpenAIGPT35_16K(AbstractSwitch):
+    """OpenAI GPT3.5-16k"""
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def get_name() -> str:
+        return "OpenAI GPT-3.5-16k官方API"
+
+    @staticmethod
+    def get_alias() -> str:
+        return "gpt3.5-16k"
+
+    @staticmethod
+    def supported() -> bool:
+        return True
+
+    @staticmethod
+    def enable():
+        import config
+        config.completion_api_params['model'] = 'gpt-3.5-turbo-16k'
+        if 'max_tokens' in config.completion_api_params:
+            del config.completion_api_params['max_tokens']
+
+

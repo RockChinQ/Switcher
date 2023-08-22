@@ -41,11 +41,13 @@ def register_all():
     from .openai_gpt3 import OpenAIGPT3
     register(OpenAIGPT3)
 
-    from .openai_gpt35 import OpenAIGPT35
+    from .openai_gpt35 import OpenAIGPT35, OpenAIGPT35_16K
     register(OpenAIGPT35)
+    register(OpenAIGPT35_16K)
 
-    from .openai_gpt4 import OpenAIGPT4
+    from .openai_gpt4 import OpenAIGPT4, OpenAIGPT4_32K
     register(OpenAIGPT4)
+    register(OpenAIGPT4_32K)
 
     from .revchatgpt_gpt35 import RevChatGPT35
     register(RevChatGPT35)
@@ -55,4 +57,21 @@ def register_all():
 
     from .hugchat import HugChat
     register(HugChat)
+
+    from .oneapi_spark import OneAPISpark
+    register(OneAPISpark)
+
+    from .oneapi_chatglm import OneAPIChatGLMPro, OneAPIChatGLMStd, OneAPIChatGLMLite
+    register(OneAPIChatGLMPro)
+    register(OneAPIChatGLMStd)
+    register(OneAPIChatGLMLite)
+
+    from .oneapi_qwen import OneAPIQWEN, OneAPIQWENPlus
+    register(OneAPIQWEN)
+    register(OneAPIQWENPlus)
+
+    from .oneapi_ernie import OneAPIERNIE, OneAPIERNIETurbo
+    register(OneAPIERNIE)
+    register(OneAPIERNIETurbo)
+
 

@@ -1,18 +1,19 @@
 from .model import AbstractSwitch
 
-class OpenAIGPT4(AbstractSwitch):
-    """OpenAI GPT4"""
+
+class OneAPIQWEN(AbstractSwitch):
+    """OneAPI 阿里通义千问"""
 
     def __init__(self):
         pass
 
     @staticmethod
     def get_name() -> str:
-        return "OpenAI GPT-4.0官方API"
+        return "OneAPI 阿里通义千问-V1"
 
     @staticmethod
     def get_alias() -> str:
-        return "gpt4"
+        return "qwen-v1"
 
     @staticmethod
     def supported() -> bool:
@@ -21,24 +22,24 @@ class OpenAIGPT4(AbstractSwitch):
     @staticmethod
     def enable():
         import config
-        config.completion_api_params['model'] = 'gpt-4'
+        config.completion_api_params['model'] = 'qwen-v1'
         if 'max_tokens' in config.completion_api_params:
             del config.completion_api_params['max_tokens']
 
 
-class OpenAIGPT4_32K(AbstractSwitch):
-    """OpenAI GPT4-32K"""
+class OneAPIQWENPlus(AbstractSwitch):
+    """OneAPI 阿里通义千问"""
 
     def __init__(self):
         pass
 
     @staticmethod
     def get_name() -> str:
-        return "OpenAI GPT-4.0-32k官方API"
+        return "OneAPI 阿里通义千问-Plus-V1"
 
     @staticmethod
     def get_alias() -> str:
-        return "gpt4-32k"
+        return "qwen-plus-v1"
 
     @staticmethod
     def supported() -> bool:
@@ -47,8 +48,9 @@ class OpenAIGPT4_32K(AbstractSwitch):
     @staticmethod
     def enable():
         import config
-        config.completion_api_params['model'] = 'gpt-4-32k'
+        config.completion_api_params['model'] = 'qwen-plus-v1'
         if 'max_tokens' in config.completion_api_params:
             del config.completion_api_params['max_tokens']
+
 
 
