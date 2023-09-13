@@ -1,18 +1,19 @@
 from .model import AbstractSwitch
 
-class OpenAIGPT4(AbstractSwitch):
-    """OpenAI GPT4"""
+
+class OneAPIERNIE(AbstractSwitch):
+    """OneAPI 百度文心千帆"""
 
     def __init__(self):
         pass
 
     @staticmethod
     def get_name() -> str:
-        return "OpenAI GPT-4.0官方API"
+        return "OneAPI 百度文心千帆ERNIE-Bot"
 
     @staticmethod
     def get_alias() -> str:
-        return "gpt4"
+        return "ERNIE-bot"
 
     @staticmethod
     def supported() -> bool:
@@ -21,24 +22,24 @@ class OpenAIGPT4(AbstractSwitch):
     @staticmethod
     def enable():
         import config
-        config.completion_api_params['model'] = 'gpt-4'
+        config.completion_api_params['model'] = 'ERNIE-Bot'
         if 'max_tokens' in config.completion_api_params:
             del config.completion_api_params['max_tokens']
 
 
-class OpenAIGPT4_32K(AbstractSwitch):
-    """OpenAI GPT4-32K"""
+class OneAPIERNIETurbo(AbstractSwitch):
+    """OneAPI 百度文心千帆"""
 
     def __init__(self):
         pass
 
     @staticmethod
     def get_name() -> str:
-        return "OpenAI GPT-4.0-32k官方API"
+        return "OneAPI 百度文心千帆ERNIE-Bot-Turbo"
 
     @staticmethod
     def get_alias() -> str:
-        return "gpt4-32k"
+        return "ERNIE-bot-turbo"
 
     @staticmethod
     def supported() -> bool:
@@ -47,8 +48,9 @@ class OpenAIGPT4_32K(AbstractSwitch):
     @staticmethod
     def enable():
         import config
-        config.completion_api_params['model'] = 'gpt-4-32k'
+        config.completion_api_params['model'] = 'ERNIE-Bot-turbo'
         if 'max_tokens' in config.completion_api_params:
             del config.completion_api_params['max_tokens']
+
 
 

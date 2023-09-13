@@ -37,12 +37,15 @@ class SwitcherPlugin(Plugin):
             if kwargs['is_admin']:
                 if len(params) == 0:
                     # 输出所有可用模型
-                    reply_str = "[Switcher] 已支持切换的模型：\n\n"
+                    reply_str = "[Switcher]\n" \
+                                "注意：要使用OneAPI渠道提供的模型，需要先配置OneAPI并设置代理地址和key。\n" \
+                                "OneAPI项目地址：https://github.com/songquanpeng/one-api\n" \
+                                "已支持切换的模型：\n\n"
                     for key in __switches__:
                         switch = __switches__[key]
                         if switch.supported():
-                            reply_str += f"{switch.get_alias()} - {switch.get_name()}\n"
-                    reply_str += "\n请输入 !switch <模型别名> 进行切换, 例如: !switch gpt3.5"
+                            reply_str += f"{switch.get_alias()}:\n{switch.get_name()}\n\n"
+                    reply_str += "请输入 !switch <模型别名> 进行切换, 例如: !switch gpt3.5"
                     event.add_return('reply', [reply_str])
                 else:
                     # 切换模型
