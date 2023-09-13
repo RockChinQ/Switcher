@@ -27,7 +27,7 @@
 
 #### 通过[One API](https://github.com/songquanpeng/one-api)接入
 
-需要QChatGPT版本高于`v2.5.3`，确保已在One API配置好渠道，并已在`config.py`设置反向代理地址和key。
+需要QChatGPT版本高于`v2.6.0`，确保已在One API配置好渠道，并已在`config.py`设置反向代理地址和key。
 
 - [x] 讯飞星火大模型
 - [x] 智谱ChatGLM-Pro/Std/Lite
