@@ -25,6 +25,15 @@
 - [x] New Bing逆向
 - [x] HuggingChat逆向
 
+#### 通过[One API](https://github.com/songquanpeng/one-api)接入
+
+需要QChatGPT版本高于`v2.5.3`，确保已在One API配置好渠道，并已在`config.py`设置反向代理地址和key。
+
+- [x] 讯飞星火大模型
+- [x] 智谱ChatGLM-Pro/Std/Lite
+- [x] 阿里通义千问-V1/Plus-V1
+- [x] 百度文心千帆ERNIE-Bot/ERNIE-Bot-Turbo
+
 ## 安装
 
 使用管理员账号私聊机器人账号发送命令
