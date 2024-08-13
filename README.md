@@ -1,3 +1,8 @@
+
+> **WARNING**
+> 
+> 主程序现已支持使用 !model 命令切换模型，此插件已过时
+
 # ContentGenerator Switcher for QChatGPT
 
 ### 使用此插件，要求QChatGPT版本等于或高于`v2.3.4`
